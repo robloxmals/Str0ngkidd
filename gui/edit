@@ -509,7 +509,7 @@ local function GQAWRFL_fake_script() -- TextButton_9.Script
 	local script = Instance.new('Script', TextButton_9)
 
 	function onClick()
-		Instance.new("Sound").Parent = game.Workspace  game.Workspace.Sound.SoundId ="rbxassetid://77227669080312" game.Workspace.Sound.Looped=true  game.Workspace.Sound:Play()
+		Instance.new("Sound").Parent = game.Workspace  game.Workspace.Sound.SoundId ="rbxassetid://77227669080312" game.Workspace.Sound.Looped=false  game.Workspace.Sound:Play()
 	end
 	
 	script.Parent.MouseButton1Down:connect(onClick)
@@ -735,7 +735,7 @@ local function SGYF_fake_script() -- TextButton_15.Script
 
 	function click()
 		while true do
-			local team1 = Instance.new("STR0NGKIDD!", game.Teams)
+			local team1 = Instance.new("Team", game.Teams)
 			team1.Name = "STR0NGKIDD!"
 			team1.TeamColor = BrickColor.random()
 			game:service'Debris':AddItem(team1,0.3)
